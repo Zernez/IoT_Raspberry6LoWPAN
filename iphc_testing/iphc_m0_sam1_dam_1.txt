@@ -1,0 +1,77 @@
+No.     Time           Source                Destination           Protocol Length Info
+     31 59.869470      fe80::98f5:3ffb:7983:a1ee fe80::f859:329d:d10b:88a8 ICMPv6   52     Neighbor Advertisement fe80::98f5:3ffb:7983:a1ee (sol)
+
+Frame 31: 52 bytes on wire (416 bits), 52 bytes captured (416 bits) on interface /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts, id 0
+    Interface id: 0 (/tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts)
+        Interface name: /tmp/wireshark_extcap_-dev-ttyACM0_20211217130928_aZd9Ts
+    Encapsulation type: IEEE 802.15.4 Wireless PAN with FCS not present (127)
+    Arrival Time: Dec 17, 2021 14:10:32.360875000 CET
+    [Time shift for this packet: 0.000000000 seconds]
+    Epoch Time: 1639746632.360875000 seconds
+    [Time delta from previous captured frame: 0.004029000 seconds]
+    [Time delta from previous displayed frame: 5.035416000 seconds]
+    [Time since reference or first frame: 59.869470000 seconds]
+    Frame Number: 31
+    Frame Length: 52 bytes (416 bits)
+    Capture Length: 52 bytes (416 bits)
+    [Frame is marked: False]
+    [Frame is ignored: False]
+    [Protocols in frame: wpan:6lowpan:ipv6:icmpv6]
+    [Coloring Rule Name: ICMP]
+    [Coloring Rule String: icmp || icmpv6]
+IEEE 802.15.4 Data, Dst: 0x0001, Src: 0x0002
+    Frame Control Field: 0x8841, Frame Type: Data, PAN ID Compression, Destination Addressing Mode: Short/16-bit, Frame Version: IEEE Std 802.15.4-2003, Source Addressing Mode: Short/16-bit
+        .... .... .... .001 = Frame Type: Data (0x1)
+        .... .... .... 0... = Security Enabled: False
+        .... .... ...0 .... = Frame Pending: False
+        .... .... ..0. .... = Acknowledge Request: False
+        .... .... .1.. .... = PAN ID Compression: True
+        .... .... 0... .... = Reserved: False
+        .... ...0 .... .... = Sequence Number Suppression: False
+        .... ..0. .... .... = Information Elements Present: False
+        .... 10.. .... .... = Destination Addressing Mode: Short/16-bit (0x2)
+        ..00 .... .... .... = Frame Version: IEEE Std 802.15.4-2003 (0)
+        10.. .... .... .... = Source Addressing Mode: Short/16-bit (0x2)
+    Sequence Number: 147
+    Destination PAN: 0xfac7
+    Destination: 0x0001
+    Source: 0x0002
+6LoWPAN, Src: fe80::98f5:3ffb:7983:a1ee, Dest: fe80::f859:329d:d10b:88a8
+    IPHC Header
+        011. .... = Pattern: IP header compression (0x03)
+        ...1 1... .... .... = Traffic class and flow label: Version, traffic class, and flow label compressed (0x3)
+        .... .0.. .... .... = Next header: Inline
+        .... ..11 .... .... = Hop limit: 255 (0x3)
+        .... .... 0... .... = Context identifier extension: False
+        .... .... .0.. .... = Source address compression: Stateless
+        .... .... ..01 .... = Source address mode: 64-bits inline (0x0001)
+        .... .... .... 0... = Multicast address compression: False
+        .... .... .... .0.. = Destination address compression: Stateless
+        .... .... .... ..01 = Destination address mode: 64-bits inline (0x0001)
+        [Source context: fe80::]
+        [Destination context: fe80::]
+    Next header: ICMPv6 (0x3a)
+    Source: fe80::98f5:3ffb:7983:a1ee
+    Destination: fe80::f859:329d:d10b:88a8
+Internet Protocol Version 6, Src: fe80::98f5:3ffb:7983:a1ee, Dst: fe80::f859:329d:d10b:88a8
+    0110 .... = Version: 6
+    .... 0000 0000 .... .... .... .... .... = Traffic Class: 0x00 (DSCP: CS0, ECN: Not-ECT)
+        .... 0000 00.. .... .... .... .... .... = Differentiated Services Codepoint: Default (0)
+        .... .... ..00 .... .... .... .... .... = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+    .... .... .... 0000 0000 0000 0000 0000 = Flow Label: 0x00000
+    Payload Length: 24
+    Next Header: ICMPv6 (58)
+    Hop Limit: 255
+    Source: fe80::98f5:3ffb:7983:a1ee
+    Destination: fe80::f859:329d:d10b:88a8
+Internet Control Message Protocol v6
+    Type: Neighbor Advertisement (136)
+    Code: 0
+    Checksum: 0xceb8 [correct]
+    [Checksum Status: Good]
+    Flags: 0x40000000, Solicited
+        0... .... .... .... .... .... .... .... = Router: Not set
+        .1.. .... .... .... .... .... .... .... = Solicited: Set
+        ..0. .... .... .... .... .... .... .... = Override: Not set
+        ...0 0000 0000 0000 0000 0000 0000 0000 = Reserved: 0
+    Target Address: fe80::98f5:3ffb:7983:a1ee
